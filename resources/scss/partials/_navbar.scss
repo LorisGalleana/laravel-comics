@@ -10,14 +10,14 @@
 .dc-logo {
     transform: scale(0.7);
 }
-ul {
+.navbar-list {
     list-style: none;
     display: flex;
     gap: 2%;
     font-size: 12px;
     margin-right: 2%;
 }
-li a {
+li .navbar-link {
     text-decoration: none;
     font-weight: bold;
     height: $navandborderheight; //variabile scritta in _variable.scss

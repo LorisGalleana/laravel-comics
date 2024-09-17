@@ -14,9 +14,11 @@
 
     @include('partials.navbar')
 
-    @yield('hero')
+    @yield('jumbo')
 
     @yield('content')
+
+    @yield('purchase')
 
     @include('partials.footer')
 

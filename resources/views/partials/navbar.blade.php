@@ -1,40 +1,40 @@
 <div class="container">
     <div class="dc-logo">
         <a href="#">
-            <img src="/src/assets/img/dc-logo.png" alt="">
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }} " alt="">
         </a>
     </div>
     <nav class="dc-nav">
-        <ul >
+        <ul class="navbar-list">
             <li>
-                <a href="#">CHARACTERS</a>
+                <a href="#" class="navbar-link bordo">CHARACTERS</a>
             </li>
             <li>
-                <a href="#">COMICS</a>
+                <a href="#" class="navbar-link bordo">COMICS</a>
             </li>
             <li>
-                <a href="#">MOVIES</a>
+                <a href="#" class="navbar-link bordo">MOVIES</a>
             </li>
             <li>
-                <a href="#">TV</a>
+                <a href="#" class="navbar-link bordo">TV</a>
             </li>
             <li>
-                <a href="#">GAMES</a>
+                <a href="#" class="navbar-link bordo">GAMES</a>
             </li>
             <li>
-                <a href="#">COLLECTIBLES</a>
+                <a href="#" class="navbar-link bordo">COLLECTIBLES</a>
             </li>
             <li>
-                <a href="#">VIDEOS</a>
+                <a href="#" class="navbar-link bordo">VIDEOS</a>
             </li>
             <li>
-                <a href="#">FANS</a>
+                <a href="#" class="navbar-link bordo">FANS</a>
             </li>
             <li>
-                <a href="#">NEWS</a>
+                <a href="#" class="navbar-link bordo">NEWS</a>
             </li>
             <li>
-                <a href="#">SHOP</a>
+                <a href="#" class="navbar-link bordo">SHOP</a>
             </li>
         </ul>
     </nav>

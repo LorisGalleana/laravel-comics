@@ -1,0 +1,57 @@
+@use './variables';
+@use './mixins' as *;
+
+
+.component-container {
+    background-color: #1C1C1C;
+
+    .container-bis {
+        position: relative;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+}
+.comic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5% 0 0;
+}
+.current-series {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -17px;
+    left: -5px;
+    width: 20%;
+
+
+    a {
+        background-color: $bluedc;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 4% 11%;
+    }
+
+}
+.more-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+    a {
+        background-color: $bluedc;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 1% 4%;
+    }
+
+}
