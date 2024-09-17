@@ -43,6 +43,48 @@
 </div>
 @endsection
 
+@section('social')
+<div class="component-container-social">
+    <div class="container-social" >
+        <div class="sign-up">
+            <a href="#">SIGN-UP NOW!</a>
+        </div>
+        <div class="social-icons">
+            <div class="follow">
+                <a href="#">FOLLOW US</a>
+            </div>
+            <div class="icons-container" >
+                <div class="facebook" >
+                    <a href="#">
+                        <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="twitter" >
+                    <a href="#">
+                        <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="youtube" >
+                    <a href="#">
+                        <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="pinterest" >
+                    <a href="#">
+                        <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="">
+                    </a>
+                </div>
+                <div class="find-us" >
+                    <a href="#">
+                        <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
 
 
 @section('titlePage')

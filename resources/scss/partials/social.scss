@@ -1,0 +1,51 @@
+@use './variables';
+@use './mixins' as *;
+
+
+
+.component-container-social {
+    background-color: #303030;
+    height: $navandborderheight;
+    margin-top: -1%;
+}
+.container-social {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.sign-up {
+    display: flex;
+    align-items: center;
+
+    a {
+        color: white ;
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none;
+        border: 3px solid $bluedc;
+        padding: 10px
+    }
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    width: 31%;
+}
+.follow  {
+    width: 30%;
+    a {
+        color: $bluedc;
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none;
+    }
+}
+.icons-container {
+    display: flex;
+    gap: 6%;
+    width: 70%;
+    transform: scale(0.8);
+}
