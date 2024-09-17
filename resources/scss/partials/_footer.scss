@@ -6,12 +6,12 @@
     width: 100%;
 }
 .component-container-footer {
-    background-image: url(../../img/footer-bg.jpg);
-    position: relative;
+    background-image: url(/public/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .contenitore {
-    position: absolute;
     top: 0;
     width: 100%;
 }
@@ -29,8 +29,8 @@
     margin-top: 5%;
     gap: 2vw;
 }
-.dc-logo {
-    background-image: url(../../img/dc-logo-bg.png);
+.dc-logo-footer {
+    background-image: url(/public/img/dc-logo-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 50%;
