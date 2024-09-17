@@ -55,3 +55,24 @@
     }
 
 }
+
+.comic-card {
+    width: calc(100% /6 - 20px);
+
+
+
+    h3 {
+        color: $primary;
+        font-size: 15px;
+        color: #CAD5C4;
+        text-align: left;
+        padding: 8% 0 16%;
+    }
+
+    img {
+        display: block;
+        height: 170px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
