@@ -1,66 +1,46 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+---
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# LARAVEL-COMICS
 
-## About Laravel
+## Descrizione
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**LARAVEL-COMICS** è un progetto basato su Laravel che simula un sito web dedicato ai fumetti, con una struttura di layout condivisa per tutte le pagine. Il progetto parte da un template sviluppato precedentemente in VueJs, ma questa volta viene implementato in Laravel. Il focus principale del progetto è la gestione del layout, la visualizzazione dinamica dei dati e l'uso di Sass per migliorare lo stile.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Funzionalità
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. **Creazione del Layout Combinato**:
+   - Creazione di un file di layout che include la struttura comune di tutte le pagine del sito, come i tag `head` e `body`.
+   - Inclusione di due partials per l'header e il footer, utilizzando il motore di templating Blade di Laravel.
+   
+2. **Visualizzazione della Lista dei Fumetti**:
+   - Creazione di una rotta che recupera la lista di tutti i fumetti da un file presente nella cartella `config` e la visualizza sulla pagina principale.
+   
+3. **Sass per la Stile**:
+   - Utilizzo di Sass per la gestione e personalizzazione dello stile del sito, rendendo il layout visivamente accattivante.
 
-## Learning Laravel
+4. **Pagine Istituzionali**:
+   - Creazione di più pagine istituzionali (ad esempio, "Chi Siamo", "Contatti") che condividono lo stesso layout e che utilizzano l'header e il footer tramite i partials.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Bonus
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. **Card Dinamiche**:
+   - Importazione delle informazioni delle card da un file di configurazione e stampa dinamica dei fumetti in card.
+   
+2. **Menu Dinamico**:
+   - Importazione dei dati del menu da un file di configurazione e stampa dinamica dei link. Il link della pagina attiva deve essere evidenziato per mostrare l'elemento attualmente selezionato.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Struttura del Progetto
 
-## Laravel Sponsors
+1. **resources/views/layouts/app.blade.php**: Layout di base che include header, footer e struttura principale della pagina.
+2. **resources/views/comics.blade.php**: Pagina che visualizza la lista dei fumetti recuperati dal file di configurazione.
+3. **config/comics.php**: File di configurazione contenente i dati relativi ai fumetti, che vengono utilizzati per popolare dinamicamente la lista.
+4. **config/menu.php**: File di configurazione contenente i dati del menu, che vengono utilizzati per creare i link dinamici.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Tecnologie utilizzate
 
-### Premium Partners
+- **Laravel 9**: Framework PHP utilizzato per la creazione del progetto.
+- **Blade**: Motore di templating di Laravel per la gestione delle views.
+- **Sass**: Preprocessore CSS utilizzato per migliorare la gestione dello stile.
+- **PHP**: Linguaggio di programmazione utilizzato per la logica dell'applicazione.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
