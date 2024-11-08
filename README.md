@@ -1,4 +1,3 @@
----
 
 # LARAVEL-COMICS
 
